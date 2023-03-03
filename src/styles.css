@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  height: 97.3vh;
+  color: #333333;
+  background-image: linear-gradient(to bottom, #bcd5eb, rgba(255, 255, 255, 0));
+  font-family: var(--font-family);
+  font-size: 18px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 100%;
+  /* background:#fff;  commenting  this line due to its breaking changes of whole application */
+}
+

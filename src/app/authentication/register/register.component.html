@@ -1,0 +1,74 @@
+<main class="register-container">
+  <form [formGroup]="registerForm" autocomplete="off" novalidate (ngSubmit)="registerUser(registerForm.value)" class="form" style="width: 50vw; background-color: white;">
+    <section class="logo-container text-center">
+      <img src="../../../assets/logo.PNG" alt="logo" height="70">
+    </section>
+    <div class="form-wrapper" style="max-width: 70%; margin: 2rem auto;">
+      <div class="field">
+        <div class="col-12">
+          <label for="firstName" class="font-bold">First Name:</label>
+        </div>
+         <div class="col-12">
+          <input id="firstName" formControlName="firstName" type="firstName" class="w-full" aria-describedby="firstName-help" pInputText>
+          <small hidden id="firstName-help">Enter your first name!</small>
+         </div>
+      </div>
+      <div class="field">
+        <div class="col-12">
+          <label for="lastName" class="font-bold">Last Name:</label>
+        </div>
+         <div class="col-12">
+          <span class="p-input-icon-right w-full">
+            <i class="pi pi-eye" style="font-size: 1.5rem;"></i>
+            <input id="lastName" formControlName="lastName" type="lastName" class="w-full" aria-describedby="lastName-help" pInputText>
+            <small hidden id="lastName-help">Enter your Last Name!</small>
+          </span>
+         </div>
+      </div>
+      <div class="field">
+        <div class="col-12">
+          <label for="username" class="font-bold">User Name:</label>
+        </div>
+         <div class="col-12">
+          <span class="p-input-icon-right w-full">
+            <i class="pi pi-eye" style="font-size: 1.5rem;"></i>
+            <input id="username" formControlName="username" type="username" class="w-full" aria-describedby="lastName-help" pInputText>
+            <small hidden id="username-help">Enter your User Name!</small>
+          </span>
+         </div>
+      </div>
+      <div class="field">
+        <div class="col-12">
+          <label for="password" class="font-bold">Password:</label>
+        </div>
+         <div class="col-12">
+          <span class="p-input-icon-right w-full">
+            <i class="pi pi-eye" style="font-size: 1.5rem;"></i>
+            <input id="password" formControlName="password" type="password" class="w-full" aria-describedby="password-help" pInputText>
+            <small hidden id="password-help">Enter your Password!</small>
+          </span>
+         </div>
+      </div>
+      <div class="field">
+        <div class="col-12">
+          <label for="confirmPassword" class="font-bold">Confirm Password:</label>
+        </div>
+         <div class="col-12">
+          <span class="p-input-icon-right w-full">
+            <i class="pi pi-eye" style="font-size: 1.5rem;"></i>
+            <input id="confirmPassword" formControlName="confirmPassword" type="password" class="w-full" aria-describedby="password-help" pInputText>
+            <small hidden id="confirmPassword-help">Enter your Password!</small>
+          </span>
+         </div>
+      </div>
+      <div class="login-actions flex flex-row justify-content-center align-items-center">
+        <button pButton pRipple type="button" label="REGISTER" class="w-3 border-round-3xl"></button>
+      </div>
+    </div>
+  </form>
+  </main>
+
+
+
+
+
